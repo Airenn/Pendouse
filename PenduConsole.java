@@ -107,4 +107,15 @@ public class PenduConsole
 		}	
 	
 	}
+	
+	public boolean verififierLettre(String mot)
+	{
+		if(this.joueur.getLettre().verifierLettreDansMot(mot))
+		{
+			int i = mot.indexOf((char)this.joueur.getLettre().getLettre());
+			trouve[i] = 1;
+			return true;
+		}
+		return false;
+	}
 }
