@@ -25,4 +25,6 @@ public class PenduConsole
 			}
 		}
 	}
+	
+	//boolean verifi
 }
