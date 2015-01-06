@@ -1,3 +1,4 @@
+package ClasseMetier;
 public class Lettre {
 
     private char lettre;
@@ -9,7 +10,10 @@ public class Lettre {
 	public Lettre(){
 		this.lettre=' ';
 	}
-
+	public Lettre(String s){
+		this.lettre= s.charAt(0);
+		
+	}
 	public char getLettre() {
 		return lettre;
 	}

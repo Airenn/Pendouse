@@ -1,3 +1,4 @@
+package ClasseMetier;
 public class Joueur {
 
     private int vie;

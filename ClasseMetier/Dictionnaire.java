@@ -1,3 +1,4 @@
+package ClasseMetier;
 import java.util.*;
 
 public class Dictionnaire {
