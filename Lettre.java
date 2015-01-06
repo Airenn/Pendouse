@@ -4,19 +4,19 @@ import com.modeliosoft.modelio.javadesigner.annotations.objid;
 @objid ("12715cba-ba8a-453a-b1f6-a38285001764")
 public class Lettre {
     @mdl.prop
-    @objid ("cef047be-c086-46e8-8ac7-aeba80148ef7")
-    private Dictionnaire mot;
+    @objid ("eff8eed5-10a0-4b92-b22e-5cecff2a04df")
+    private char lettre;
 
     @mdl.propgetter
-    public Dictionnaire getMot() {
+    public char getLettre() {
         // Automatically generated method. Please do not modify this code.
-        return this.mot;
+        return this.lettre;
     }
 
     @mdl.propsetter
-    public void setMot(Dictionnaire value) {
+    public void setLettre(char value) {
         // Automatically generated method. Please do not modify this code.
-        this.mot = value;
+        this.lettre = value;
     }
 
     @objid ("ee5a1d47-9df6-44c3-8e30-2b546112b790")
