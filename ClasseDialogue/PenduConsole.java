@@ -1,5 +1,10 @@
+package classeDialogue;
+
 import java.util.*;
-import ClasseMetier.*;
+
+import classeMetier.Dictionnaire;
+import classeMetier.Joueur;
+import classeMetier.Lettre;
 
 public class PenduConsole{
 	private Joueur joueur;
@@ -116,6 +121,10 @@ public class PenduConsole{
 		}
 		
 		return false;
+	}
+	public void main(String[] args){
+		PenduConsole p=new PenduConsole();
+		p.menu();
 	}
 	
 }
