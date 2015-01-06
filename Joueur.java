@@ -35,9 +35,7 @@ public class Joueur {
 		return "Joueur [vie=" + vie + ", lettre=" + lettre + "]";
 	}
 
-	public int pointVie(String mot) {
-		if(!this.lettre.verifierLettreDansMot(mot))
+	public void pointVie() {
 			this.setVie(this.vie-1);
-		return this.vie;
     }
 }
