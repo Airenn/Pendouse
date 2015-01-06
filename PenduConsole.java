@@ -2,14 +2,14 @@ public class PenduConsole
 {
 	private Joueur j;
 	private Dictionnaire d;
+	private int trouve[];
+	
 	
 	public void afficherMot(String mot)
-	{
-		int trouve[] = new int[mot.length()];
-		
+	{		
 		for(int i = 0; i < mot.length(); i++)
 		{
-			if(trouve[i] == 0)
+			if(this.trouve[i] == 0)
 			{
 				if(i == mot.length()-1)
 					System.out.println("_");
