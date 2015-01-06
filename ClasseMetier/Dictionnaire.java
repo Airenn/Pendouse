@@ -1,5 +1,6 @@
 package ClasseMetier;
 import java.util.*;
+import ClasseDialogue.*;
 
 public class Dictionnaire {
 

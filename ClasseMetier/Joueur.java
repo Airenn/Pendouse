@@ -1,4 +1,6 @@
 package ClasseMetier;
+import ClasseDialogue.*;
+
 public class Joueur {
 
     private int vie;

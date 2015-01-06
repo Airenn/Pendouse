@@ -1,4 +1,6 @@
 package ClasseMetier;
+import ClasseDialogue.*;
+
 public class Lettre {
 
     private char lettre;
