@@ -3,7 +3,6 @@ public class Lettre {
     private char lettre;
 
 	public Lettre(char lettre) {
-		super();
 		this.lettre = lettre;
 	}
 	

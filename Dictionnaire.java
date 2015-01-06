@@ -10,7 +10,6 @@ public class Dictionnaire {
     }
 
     public Dictionnaire(List<String> mots) {
-		super();
 		this.mots = mots;
 	}
     public Dictionnaire(){

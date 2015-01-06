@@ -4,7 +4,6 @@ public class Joueur {
     private Lettre lettre;
 
     public Joueur(int vie, Lettre lettre) {
-		super();
 		this.vie = vie;
 		this.lettre = lettre;
 	}
