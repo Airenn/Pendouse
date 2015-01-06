@@ -1,4 +1,5 @@
 import java.util.*;
+import ClasseMetier.*;
 
 public class PenduConsole{
 	private Joueur joueur;
