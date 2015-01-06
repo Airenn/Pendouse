@@ -1,7 +1,6 @@
 import java.util.*;
 
-public class PenduConsole
-{
+public class PenduConsole{
 	private Joueur joueur;
 	private Dictionnaire dictionnaire;
 	private int trouve[];
@@ -95,27 +94,27 @@ public class PenduConsole
 			this.afficherMot(mot);
 			System.out.println("Vous avez :"+this.getJoueur().getVie()+" Vies");
 			System.out.println("Entrez une lettre :");
-			Lettre str = new Lettre(sc.nextLine());
+			Lettre str = new Lettre(sc.next().charAt(0));
 			this.joueur.setLettre(str);
-				if(this.joueur.getLettre().verifierLettreDansMot(mot)){
+				if(verifierLettre(mot)){
 					System.out.println("BRAVO LE VEAU");
 				}
 				else{
 					System.out.println("Dommage vous perdez une vie !");
-					this.getJoueur().setVie(this.getJoueur().pointVie());
+					this.getJoueur().pointVie();
 					}
 		}	
 	
 	}
 	
-	public boolean verififierLettre(String mot)
-	{
-		if(this.joueur.getLettre().verifierLettreDansMot(mot))
-		{
+	public boolean verifierLettre(String mot){
+		if(this.joueur.getLettre().verifierLettreDansMot(mot)){
 			int i = mot.indexOf((char)this.joueur.getLettre().getLettre());
 			trouve[i] = 1;
 			return true;
 		}
+		
 		return false;
 	}
+	
 }
