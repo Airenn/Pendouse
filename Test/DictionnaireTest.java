@@ -3,6 +3,7 @@ import static org.junit.Assert.*;
 import java.util.ArrayList;
 import org.gradle.*;
 import org.junit.Test;
+import classeMetier.*;
 
 public class DictionnaireTest {
 	@Test

@@ -1,5 +1,5 @@
-package ClasseMetier;
-import ClasseDialogue.*;
+package classeMetier;
+import classeDialogue.*;
 
 public class Joueur {
 

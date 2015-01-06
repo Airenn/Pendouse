@@ -1,6 +1,5 @@
 package Test;
-import ClasseMetier.Joueur;
-import ClasseMetier.Lettre;
+import classeMetier.*;
 
 import org.junit.Test;
 

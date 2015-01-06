@@ -1,6 +1,6 @@
 package org.gradle;
 import java.util.*;
-import ClasseDialogue.*;
+import classeDialogue.*;
 
 public class Dictionnaire {
 
