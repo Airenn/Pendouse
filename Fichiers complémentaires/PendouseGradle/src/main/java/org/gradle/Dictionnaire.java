@@ -1,6 +1,5 @@
-package classeMetier;
+package org.gradle;
 import java.util.*;
-import classeDialogue.*;
 
 public class Dictionnaire {
 

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.1" sequence="0" timestamp="1420543798623" analysisTimestamp="1420543798646" release="">
+  <Project projectName="">
+    <Jar>/Users/Airenn/Documents/workspace/PendouseGradle/build/classes/main/org/gradle/Dictionnaire.class</Jar>
+    <Jar>/Users/Airenn/Documents/workspace/PendouseGradle/build/classes/main/org/gradle/Joueur.class</Jar>
+    <Jar>/Users/Airenn/Documents/workspace/PendouseGradle/build/classes/main/org/gradle/Lettre.class</Jar>
+    <Jar>/Users/Airenn/Documents/workspace/PendouseGradle/build/classes/main/org/gradle/PenduConsole.class</Jar>
+    <AuxClasspathEntry>/Users/Airenn/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2/f951934aa5ae5a88d7e6dfaa6d32307d834a88be/commons-collections-3.2.jar</AuxClasspathEntry>
+    <SrcDir>/Users/Airenn/Documents/workspace/PendouseGradle/src/main/java/org/gradle/Dictionnaire.java</SrcDir>
+    <SrcDir>/Users/Airenn/Documents/workspace/PendouseGradle/src/main/java/org/gradle/Joueur.java</SrcDir>
+    <SrcDir>/Users/Airenn/Documents/workspace/PendouseGradle/src/main/java/org/gradle/Lettre.java</SrcDir>
+    <SrcDir>/Users/Airenn/Documents/workspace/PendouseGradle/src/main/java/org/gradle/PenduConsole.java</SrcDir>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" abbrev="DLS" category="STYLE">
+    <Class classname="org.gradle.PenduConsole">
+      <SourceLine classname="org.gradle.PenduConsole" start="11" end="155" sourcefile="PenduConsole.java" sourcepath="org/gradle/PenduConsole.java"/>
+    </Class>
+    <Method classname="org.gradle.PenduConsole" name="menu" signature="()V" isStatic="false">
+      <SourceLine classname="org.gradle.PenduConsole" start="60" end="100" startBytecode="0" endBytecode="81" sourcefile="PenduConsole.java" sourcepath="org/gradle/PenduConsole.java"/>
+    </Method>
+    <LocalVariable name="p" register="1" pc="8" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.gradle.PenduConsole" start="60" end="60" startBytecode="7" endBytecode="7" sourcefile="PenduConsole.java" sourcepath="org/gradle/PenduConsole.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="p"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N">
+    <Class classname="org.gradle.PenduConsole">
+      <SourceLine classname="org.gradle.PenduConsole" start="11" end="155" sourcefile="PenduConsole.java" sourcepath="org/gradle/PenduConsole.java"/>
+    </Class>
+    <Method classname="org.gradle.PenduConsole" name="jouer" signature="()V" isStatic="false">
+      <SourceLine classname="org.gradle.PenduConsole" start="103" end="129" startBytecode="0" endBytecode="412" sourcefile="PenduConsole.java" sourcepath="org/gradle/PenduConsole.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner" start="608" end="609" startBytecode="0" endBytecode="43" sourcefile="Scanner.java" sourcepath="java/util/Scanner.java"/>
+    </Method>
+    <SourceLine classname="org.gradle.PenduConsole" start="103" end="103" startBytecode="7" endBytecode="7" sourcefile="PenduConsole.java" sourcepath="org/gradle/PenduConsole.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N">
+    <Class classname="org.gradle.PenduConsole">
+      <SourceLine classname="org.gradle.PenduConsole" start="11" end="155" sourcefile="PenduConsole.java" sourcepath="org/gradle/PenduConsole.java"/>
+    </Class>
+    <Method classname="org.gradle.PenduConsole" name="menu" signature="()V" isStatic="false">
+      <SourceLine classname="org.gradle.PenduConsole" start="60" end="100" startBytecode="0" endBytecode="465" sourcefile="PenduConsole.java" sourcepath="org/gradle/PenduConsole.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner" start="608" end="609" startBytecode="0" endBytecode="43" sourcefile="Scanner.java" sourcepath="java/util/Scanner.java"/>
+    </Method>
+    <SourceLine classname="org.gradle.PenduConsole" start="61" end="61" startBytecode="15" endBytecode="15" sourcefile="PenduConsole.java" sourcepath="org/gradle/PenduConsole.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="org.gradle.PenduConsole">
+      <SourceLine classname="org.gradle.PenduConsole" start="11" end="155" sourcefile="PenduConsole.java" sourcepath="org/gradle/PenduConsole.java"/>
+    </Class>
+    <Method classname="org.gradle.PenduConsole" name="menu" signature="()V" isStatic="false">
+      <SourceLine classname="org.gradle.PenduConsole" start="60" end="100" startBytecode="0" endBytecode="465" sourcefile="PenduConsole.java" sourcepath="org/gradle/PenduConsole.java"/>
+    </Method>
+    <SourceLine classname="org.gradle.PenduConsole" start="96" end="96" startBytecode="214" endBytecode="214" sourcefile="PenduConsole.java" sourcepath="org/gradle/PenduConsole.java"/>
+  </BugInstance>
+  <BugInstance type="SA_FIELD_SELF_ASSIGNMENT" priority="1" abbrev="SA" category="CORRECTNESS">
+    <Class classname="org.gradle.PenduConsole">
+      <SourceLine classname="org.gradle.PenduConsole" start="11" end="155" sourcefile="PenduConsole.java" sourcepath="org/gradle/PenduConsole.java"/>
+    </Class>
+    <Method classname="org.gradle.PenduConsole" name="setJoueur" signature="(Lorg/gradle/Joueur;)V" isStatic="false">
+      <SourceLine classname="org.gradle.PenduConsole" start="24" end="25" startBytecode="0" endBytecode="64" sourcefile="PenduConsole.java" sourcepath="org/gradle/PenduConsole.java"/>
+    </Method>
+    <Field classname="org.gradle.PenduConsole" name="joueur" signature="Lorg/gradle/Joueur;" isStatic="false">
+      <SourceLine classname="org.gradle.PenduConsole" sourcefile="PenduConsole.java" sourcepath="org/gradle/PenduConsole.java"/>
+    </Field>
+    <LocalVariable name="j" register="1" pc="0" role="LOCAL_VARIABLE_DID_YOU_MEAN"/>
+    <SourceLine classname="org.gradle.PenduConsole" start="24" end="24" startBytecode="5" endBytecode="5" sourcefile="PenduConsole.java" sourcepath="org/gradle/PenduConsole.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>javax.annotation.Nonnull</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 6 Jan 2015 12:29:58 +0100" total_classes="4" referenced_classes="21" total_bugs="5" total_size="197" num_packages="1" vm_version="24.71-b01" cpu_seconds="9.06" clock_seconds="3.14" peak_mbytes="97.83" alloc_mbytes="3641.00" gc_seconds="0.02" priority_2="1" priority_1="4">
+    <PackageStats package="org.gradle" total_bugs="5" total_types="4" total_size="197" priority_2="1" priority_1="4">
+      <ClassStats class="org.gradle.Dictionnaire" sourceFile="Dictionnaire.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="org.gradle.Joueur" sourceFile="Joueur.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="org.gradle.Lettre" sourceFile="Lettre.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="org.gradle.PenduConsole" sourceFile="PenduConsole.java" interface="false" size="100" bugs="5" priority_2="1" priority_1="4"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="415" invocations="353" avgMicrosecondsPerInvocation="1175" maxMicrosecondsPerInvocation="19958" standardDeviationMircosecondsPerInvocation="2122"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="261" invocations="21" avgMicrosecondsPerInvocation="12463" maxMicrosecondsPerInvocation="73904" standardDeviationMircosecondsPerInvocation="18844"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="209" invocations="21" avgMicrosecondsPerInvocation="9986" maxMicrosecondsPerInvocation="54835" standardDeviationMircosecondsPerInvocation="14392"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="158" invocations="25" avgMicrosecondsPerInvocation="6325" maxMicrosecondsPerInvocation="11693" standardDeviationMircosecondsPerInvocation="3184"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="137" invocations="21" avgMicrosecondsPerInvocation="6559" maxMicrosecondsPerInvocation="45925" standardDeviationMircosecondsPerInvocation="10250"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="89" invocations="37" avgMicrosecondsPerInvocation="2405" maxMicrosecondsPerInvocation="25910" standardDeviationMircosecondsPerInvocation="4818"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="83" invocations="37" avgMicrosecondsPerInvocation="2244" maxMicrosecondsPerInvocation="24697" standardDeviationMircosecondsPerInvocation="4537"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="79" invocations="37" avgMicrosecondsPerInvocation="2144" maxMicrosecondsPerInvocation="25385" standardDeviationMircosecondsPerInvocation="4572"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="77" invocations="21" avgMicrosecondsPerInvocation="3695" maxMicrosecondsPerInvocation="12821" standardDeviationMircosecondsPerInvocation="4075"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="69" invocations="111" avgMicrosecondsPerInvocation="626" maxMicrosecondsPerInvocation="3602" standardDeviationMircosecondsPerInvocation="659"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="65" invocations="21" avgMicrosecondsPerInvocation="3108" maxMicrosecondsPerInvocation="15807" standardDeviationMircosecondsPerInvocation="4417"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="64" invocations="37" avgMicrosecondsPerInvocation="1755" maxMicrosecondsPerInvocation="14264" standardDeviationMircosecondsPerInvocation="2981"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="64" invocations="37" avgMicrosecondsPerInvocation="1739" maxMicrosecondsPerInvocation="16010" standardDeviationMircosecondsPerInvocation="3169"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="61" invocations="343" avgMicrosecondsPerInvocation="178" maxMicrosecondsPerInvocation="2110" standardDeviationMircosecondsPerInvocation="325"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="55" invocations="23" avgMicrosecondsPerInvocation="2430" maxMicrosecondsPerInvocation="54278" standardDeviationMircosecondsPerInvocation="11054"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="51" invocations="26" avgMicrosecondsPerInvocation="1985" maxMicrosecondsPerInvocation="15336" standardDeviationMircosecondsPerInvocation="3183"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="48" invocations="37" avgMicrosecondsPerInvocation="1308" maxMicrosecondsPerInvocation="42247" standardDeviationMircosecondsPerInvocation="6825"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="44" invocations="37" avgMicrosecondsPerInvocation="1201" maxMicrosecondsPerInvocation="11377" standardDeviationMircosecondsPerInvocation="2220"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="42" invocations="21" avgMicrosecondsPerInvocation="2046" maxMicrosecondsPerInvocation="9804" standardDeviationMircosecondsPerInvocation="2530"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

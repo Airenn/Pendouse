@@ -1,12 +1,11 @@
-package classeMetier;
-import classeDialogue.*;
-
+package org.gradle;
 public class Joueur {
 
     private int vie;
     private Lettre lettre;
 
     public Joueur(int vie, Lettre lettre) {
+		super();
 		this.vie = vie;
 		this.lettre = lettre;
 	}

@@ -3,7 +3,7 @@ import org.apache.commons.collections.list.GrowthList;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-import org.gradle.src.classeDialogue.PenduConsole;
+import org.gradle.*;
 
 public class PenduConsoleTest {
 

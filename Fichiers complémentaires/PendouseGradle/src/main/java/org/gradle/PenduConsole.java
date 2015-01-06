@@ -1,10 +1,7 @@
-package classeDialogue;
+package org.gradle;
 
 import java.util.*;
-
-import classeMetier.Dictionnaire;
-import classeMetier.Joueur;
-import classeMetier.Lettre;
+import org.gradle.*;
 
 public class PenduConsole{
 	private Joueur joueur;

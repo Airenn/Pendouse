@@ -1,6 +1,4 @@
-package classeMetier;
-import classeDialogue.*;
-
+package org.gradle;
 public class Lettre {
 
     private char lettre;

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.1" sequence="0" timestamp="1420540744828" analysisTimestamp="1420540744851" release="">
+  <Project projectName="">
+    <Jar>/Users/Airenn/Documents/workspace/PendouseGradle/build/classes/test/org/gradle/DictionnaireTest.class</Jar>
+    <Jar>/Users/Airenn/Documents/workspace/PendouseGradle/build/classes/test/org/gradle/JoueurTest.class</Jar>
+    <Jar>/Users/Airenn/Documents/workspace/PendouseGradle/build/classes/test/org/gradle/TestLettre.class</Jar>
+    <AuxClasspathEntry>/Users/Airenn/Documents/workspace/PendouseGradle/build/classes/main</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/Airenn/Documents/workspace/PendouseGradle/build/resources/main</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/Airenn/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2/f951934aa5ae5a88d7e6dfaa6d32307d834a88be/commons-collections-3.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/Airenn/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/Airenn/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar</AuxClasspathEntry>
+    <SrcDir>/Users/Airenn/Documents/workspace/PendouseGradle/src/test/java/org/gradle/DictionnaireTest.java</SrcDir>
+    <SrcDir>/Users/Airenn/Documents/workspace/PendouseGradle/src/test/java/org/gradle/JoueurTest.java</SrcDir>
+    <SrcDir>/Users/Airenn/Documents/workspace/PendouseGradle/src/test/java/org/gradle/TestLettre.java</SrcDir>
+  </Project>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="org.gradle.TestLettre">
+      <SourceLine classname="org.gradle.TestLettre" start="8" end="28" sourcefile="TestLettre.java" sourcepath="org/gradle/TestLettre.java"/>
+    </Class>
+    <Method classname="org.gradle.TestLettre" name="BooleanLettre" signature="()V" isStatic="false">
+      <SourceLine classname="org.gradle.TestLettre" start="23" end="28" startBytecode="0" endBytecode="124" sourcefile="TestLettre.java" sourcepath="org/gradle/TestLettre.java"/>
+    </Method>
+  </BugInstance>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>javax.annotation.Nonnull</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 6 Jan 2015 11:39:04 +0100" total_classes="3" referenced_classes="19" total_bugs="1" total_size="35" num_packages="1" vm_version="24.71-b01" cpu_seconds="4.57" clock_seconds="1.65" peak_mbytes="93.95" alloc_mbytes="3641.00" gc_seconds="0.01" priority_2="1">
+    <PackageStats package="org.gradle" total_bugs="1" total_types="3" total_size="35" priority_2="1">
+      <ClassStats class="org.gradle.DictionnaireTest" sourceFile="DictionnaireTest.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.gradle.JoueurTest" sourceFile="JoueurTest.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.gradle.TestLettre" sourceFile="TestLettre.java" interface="false" size="20" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="280" invocations="298" avgMicrosecondsPerInvocation="942" maxMicrosecondsPerInvocation="14568" standardDeviationMircosecondsPerInvocation="1698"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="123" invocations="19" avgMicrosecondsPerInvocation="6526" maxMicrosecondsPerInvocation="37199" standardDeviationMircosecondsPerInvocation="9886"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="100" invocations="19" avgMicrosecondsPerInvocation="5299" maxMicrosecondsPerInvocation="29951" standardDeviationMircosecondsPerInvocation="8025"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="73" invocations="19" avgMicrosecondsPerInvocation="3875" maxMicrosecondsPerInvocation="14550" standardDeviationMircosecondsPerInvocation="4856"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="53" invocations="25" avgMicrosecondsPerInvocation="2150" maxMicrosecondsPerInvocation="52133" standardDeviationMircosecondsPerInvocation="10202"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="52" invocations="288" avgMicrosecondsPerInvocation="183" maxMicrosecondsPerInvocation="2552" standardDeviationMircosecondsPerInvocation="330"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="45" invocations="8" avgMicrosecondsPerInvocation="5668" maxMicrosecondsPerInvocation="43540" standardDeviationMircosecondsPerInvocation="14316"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="43" invocations="19" avgMicrosecondsPerInvocation="2297" maxMicrosecondsPerInvocation="15420" standardDeviationMircosecondsPerInvocation="3783"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="42" invocations="19" avgMicrosecondsPerInvocation="2256" maxMicrosecondsPerInvocation="10615" standardDeviationMircosecondsPerInvocation="2837"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="35" invocations="60" avgMicrosecondsPerInvocation="591" maxMicrosecondsPerInvocation="3108" standardDeviationMircosecondsPerInvocation="593"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="34" invocations="24" avgMicrosecondsPerInvocation="1421" maxMicrosecondsPerInvocation="14215" standardDeviationMircosecondsPerInvocation="2854"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="33" invocations="299" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="7281" standardDeviationMircosecondsPerInvocation="418"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="29" invocations="19" avgMicrosecondsPerInvocation="1555" maxMicrosecondsPerInvocation="8670" standardDeviationMircosecondsPerInvocation="2187"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
