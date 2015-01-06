@@ -1,4 +1,4 @@
-package ClasseMetier;
+package org.gradle;
 import java.util.*;
 import ClasseDialogue.*;
 
@@ -12,10 +12,10 @@ public class Dictionnaire {
     }
 
     public Dictionnaire(List<String> mots) {
+		super();
 		this.mots = mots;
 	}
     public Dictionnaire(){
-    	super();
     	this.mots=new ArrayList<String>();
     }
 	public String toString() {

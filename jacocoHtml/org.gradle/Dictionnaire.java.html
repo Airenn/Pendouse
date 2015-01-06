@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>Dictionnaire.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">PendouseGradle</a> &gt; <a href="index.source.html" class="el_package">org.gradle</a> &gt; <span class="el_source">Dictionnaire.java</span></div><h1>Dictionnaire.java</h1><pre class="source lang-java linenums">package org.gradle;
+import java.util.*;
+
+public class Dictionnaire {
+
+<span class="pc" id="L6">    private List&lt;String&gt; mots = new ArrayList&lt;String&gt; ();</span>
+
+
+    public List&lt;String&gt; getMots() {
+<span class="fc" id="L10">        return this.mots;</span>
+    }
+
+    public Dictionnaire(List&lt;String&gt; mots) {
+<span class="nc" id="L14">		super();</span>
+<span class="nc" id="L15">		this.mots = mots;</span>
+<span class="nc" id="L16">	}</span>
+<span class="fc" id="L17">    public Dictionnaire(){</span>
+<span class="fc" id="L18">    	this.mots=new ArrayList&lt;String&gt;();</span>
+<span class="fc" id="L19">    }</span>
+	public String toString() {
+<span class="nc" id="L21">		return &quot;Dictionnaire [mots=&quot; + mots + &quot;]&quot;;</span>
+	}
+	
+	public String motAleatoire(){
+<span class="nc" id="L25">		int random = (int)(Math.random() * (this.mots.size()));</span>
+<span class="nc" id="L26">		return this.mots.get(random);</span>
+	}
+
+	public void setMots(List&lt;String&gt; value) {
+<span class="nc" id="L30">        this.mots = value;</span>
+<span class="nc" id="L31">    }</span>
+
+
+    public void ajouterMot(String mot) {
+<span class="pc bpc" id="L35" title="1 of 2 branches missed.">    	if(verifierMotAjout(mot))</span>
+<span class="fc" id="L36">    		this.mots.add(mot);</span>
+<span class="fc" id="L37">    }</span>
+
+
+    public String supprimerMot(String mot) {
+<span class="nc bnc" id="L41" title="All 2 branches missed.">    	if(verifierMotSuppr(mot)){</span>
+<span class="nc" id="L42">    		String var = mot;</span>
+<span class="nc" id="L43">    		this.mots.remove(mot);</span>
+<span class="nc" id="L44">    		return var;</span>
+    	}
+    	else
+<span class="nc" id="L47">    		return null;</span>
+    }
+
+   
+    public boolean verifierMotAjout(String mot) {
+<span class="pc bpc" id="L52" title="1 of 2 branches missed.">    	if(this.mots.indexOf(mot)==-1)</span>
+<span class="fc" id="L53">    		return true;</span>
+<span class="nc" id="L54">    	return false;</span>
+    }
+
+
+    public boolean verifierMotSuppr(String mot){
+<span class="nc bnc" id="L59" title="All 2 branches missed.">    	if(this.mots.indexOf(mot)!=-1)</span>
+<span class="nc" id="L60">    		return true;</span>
+<span class="nc" id="L61">    	return false;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.1.201405082137</span></div></body></html>

@@ -1,16 +1,14 @@
-package Test;
-
+package org.gradle;
 import static org.junit.Assert.*;
 import java.util.ArrayList;
-import ClasseMetier.*;
+import org.gradle.*;
 import org.junit.Test;
 
 public class DictionnaireTest {
 	@Test
 	public void canConstructADictionnaireWithAName(){
-		ArrayList mots = new ArrayList();
-		mots.add("Salut");
-		Dictionnaire d = new Dictionnaire(mots);
-		assertEquals(mots.contains("Salut"), d.getMots());
+		Dictionnaire d = new Dictionnaire();
+		d.ajouterMot("salut");
+		assertEquals("salut", d.getMots().get(0));
 	}
 }
