@@ -25,9 +25,8 @@ public class Lettre {
 	}
 
 	public boolean verifierLettreDansMot(String mot){
-    	if(mot.indexOf(this.lettre)!=-1)
-
-    	return false;
+    	if(mot.indexOf(this.lettre)==-1)
+    		return false;
 		return true;
     }
 
