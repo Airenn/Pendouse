@@ -8,7 +8,14 @@ public class Joueur {
 		this.vie = vie;
 		this.lettre = lettre;
 	}
-    
+    public Joueur(){
+    	this.vie=0;
+    	this.lettre = new Lettre();
+    }
+    public Joueur(int vie){
+    	this.vie=vie;
+    	this.lettre=new Lettre();
+    }
     public int getVie() {
         return this.vie;
     }

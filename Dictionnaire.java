@@ -13,7 +13,10 @@ public class Dictionnaire {
 		super();
 		this.mots = mots;
 	}
-
+    public Dictionnaire(){
+    	super();
+    	this.mots=new ArrayList<String>();
+    }
 	public String toString() {
 		return "Dictionnaire [mots=" + mots + "]";
 	}

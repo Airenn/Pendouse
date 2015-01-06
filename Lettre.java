@@ -6,6 +6,10 @@ public class Lettre {
 		super();
 		this.lettre = lettre;
 	}
+	
+	public Lettre(){
+		this.lettre=' ';
+	}
 
 	public char getLettre() {
 		return lettre;
@@ -22,8 +26,9 @@ public class Lettre {
 
 	public boolean verifierLettreDansMot(String mot){
     	if(mot.indexOf(this.lettre)!=-1)
-    		return true;
+
     	return false;
+		return true;
     }
 
 }
