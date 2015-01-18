@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.JoueurTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2015-01-18T16:13:15" hostname="MacBook-Pro-de-Nassim.local" time="0.011">
+  <properties/>
+  <testcase name="vieTest" classname="test.JoueurTest" time="0.0"/>
+  <testcase name="lettreTest" classname="test.JoueurTest" time="0.0"/>
+  <testcase name="deuxLettreTest" classname="test.JoueurTest" time="0.0"/>
+  <testcase name="deuxVieTest" classname="test.JoueurTest" time="0.0"/>
+  <testcase name="vieTest" classname="test.JoueurTest" time="0.0"/>
+  <testcase name="lettreTest" classname="test.JoueurTest" time="0.001"/>
+  <testcase name="deuxLettreTest" classname="test.JoueurTest" time="0.0"/>
+  <testcase name="deuxVieTest" classname="test.JoueurTest" time="0.001"/>
+  <system-out><![CDATA[Test de la classe Joueur ...
+Test de la classe Joueur fait.
+Test de la classe Joueur ...
+Test de la classe Joueur fait.
+Test de la classe Joueur ...
+Test de la classe Joueur fait.
+Test de la classe Joueur ...
+Test de la classe Joueur fait.
+Test de la classe Joueur ...
+Test de la classe Joueur fait.
+Test de la classe Joueur ...
+Test de la classe Joueur fait.
+Test de la classe Joueur ...
+Test de la classe Joueur fait.
+Test de la classe Joueur ...
+Test de la classe Joueur fait.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

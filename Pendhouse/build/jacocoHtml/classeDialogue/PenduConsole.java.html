@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>PenduConsole.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Pendhouse</a> &gt; <a href="index.source.html" class="el_package">classeDialogue</a> &gt; <span class="el_source">PenduConsole.java</span></div><h1>PenduConsole.java</h1><pre class="source lang-java linenums">package classeDialogue;
+
+import java.util.*;
+
+import classeMetier.*;
+
+public class PenduConsole{
+	private Joueur joueur;
+	private Dictionnaire dictionnaire;
+	private int trouve[];
+	
+<span class="fc" id="L12">	public PenduConsole(){</span>
+<span class="fc" id="L13">		this.joueur=new Joueur();</span>
+<span class="fc" id="L14">		this.dictionnaire=new Dictionnaire();</span>
+<span class="fc" id="L15">		this.trouve=null;</span>
+<span class="fc" id="L16">	}</span>
+	
+	
+	public Joueur getJoueur() {
+<span class="nc" id="L20">		return joueur;</span>
+	}
+
+
+	public void setJoueur(Joueur j) {
+<span class="fc" id="L25">		this.joueur = j;</span>
+<span class="fc" id="L26">	}</span>
+
+
+	public Dictionnaire getDictionnaire() {
+<span class="nc" id="L30">		return dictionnaire;</span>
+	}
+
+
+	public void setDictionnaire(Dictionnaire d) {
+<span class="nc" id="L35">		this.dictionnaire = d;</span>
+<span class="nc" id="L36">	}</span>
+
+
+	public void afficherMot(String mot)
+	{		
+<span class="nc bnc" id="L41" title="All 2 branches missed.">		for(int i = 0; i &lt; mot.length(); i++)</span>
+		{
+<span class="nc bnc" id="L43" title="All 2 branches missed.">			if(this.trouve[i] == 0)</span>
+			{
+<span class="nc bnc" id="L45" title="All 2 branches missed.">				if(i == mot.length()-1)</span>
+<span class="nc" id="L46">					System.out.println(&quot;_&quot;);</span>
+				else
+<span class="nc" id="L48">					System.out.print(&quot;_.&quot;);</span>
+			}
+			else
+			{
+<span class="nc bnc" id="L52" title="All 2 branches missed.">				if(i == mot.length()-1)</span>
+<span class="nc" id="L53">					System.out.println(mot.charAt(i));</span>
+				else
+<span class="nc" id="L55">					System.out.print(mot.charAt(i));</span>
+			}
+		}
+<span class="nc" id="L58">	}</span>
+	
+	public void menu(){
+<span class="nc" id="L61">		Scanner sc = new Scanner(System.in);</span>
+<span class="nc" id="L62">		System.out.println(&quot;PENDOUSE&quot;);</span>
+<span class="nc" id="L63">		System.out.println(&quot;--------------------------------&quot;);</span>
+<span class="nc" id="L64">		System.out.println(&quot;Saissisez votre choix :&quot;);</span>
+<span class="nc" id="L65">		System.out.println(&quot;1.Jouez&quot;);</span>
+<span class="nc" id="L66">		System.out.println(&quot;2.Entrez un nouveau mot&quot;);</span>
+<span class="nc" id="L67">		System.out.println(&quot;3.Suprimer un mot deja existant&quot;);</span>
+<span class="nc" id="L68">		System.out.println(&quot;4.Quitter&quot;);</span>
+<span class="nc" id="L69">		int str = sc.nextInt();</span>
+<span class="nc" id="L70">		System.out.println(&quot;Vous avez saisi : &quot; + str);</span>
+<span class="nc bnc" id="L71" title="All 5 branches missed.">			switch(str){</span>
+			
+			case 1:
+				try{
+<span class="nc" id="L75">				this.jouer();</span>
+<span class="nc" id="L76">				}catch(Exception e){</span>
+<span class="nc" id="L77">					System.out.println(&quot;Aucun mot dans le dico&quot;);</span>
+<span class="nc" id="L78">					this.menu();			</span>
+<span class="nc" id="L79">				}</span>
+<span class="nc" id="L80">				break;	</span>
+	
+			case 2:
+<span class="nc" id="L83">				System.out.println(&quot;Entrer le mot a ajouter:&quot;);</span>
+<span class="nc" id="L84">				String s = sc.next();</span>
+<span class="nc" id="L85">				this.dictionnaire.ajouterMot(s);</span>
+<span class="nc" id="L86">				this.menu();</span>
+<span class="nc" id="L87">				break;</span>
+	
+			case 3:
+<span class="nc" id="L90">				String motsup = sc.next();</span>
+<span class="nc" id="L91">				this.dictionnaire.supprimerMot(motsup);</span>
+<span class="nc" id="L92">				this.menu();</span>
+<span class="nc" id="L93">				break;</span>
+				
+			case 4:
+<span class="nc" id="L96">				System.exit(0);</span>
+				break;
+			}
+<span class="nc" id="L99">			sc.close();</span>
+<span class="nc" id="L100">		}</span>
+	
+	public void jouer(){
+<span class="nc" id="L103">		Scanner sc = new Scanner(System.in);</span>
+<span class="nc" id="L104">		String mot= this.getDictionnaire().motAleatoire();</span>
+<span class="nc" id="L105">		this.trouve = new int[mot.length()];</span>
+<span class="nc" id="L106">		this.joueur.setVie(5);</span>
+<span class="nc" id="L107">		System.out.println(&quot;--------------------------------&quot;);</span>
+<span class="nc" id="L108">		System.out.println(&quot;LA PARTIE COMMENCE&quot;);</span>
+<span class="nc bnc" id="L109" title="All 4 branches missed.">		while(this.getJoueur().getVie()&gt;0 &amp;&amp; this.gagne()!=true){</span>
+<span class="nc" id="L110">			System.out.println(&quot;VOICI LE MOT :&quot;);</span>
+<span class="nc" id="L111">			this.afficherMot(mot);</span>
+<span class="nc" id="L112">			System.out.println(&quot;Vous avez :&quot;+this.getJoueur().getVie()+&quot; Vies&quot;);</span>
+<span class="nc" id="L113">			System.out.println(&quot;Entrez une lettre :&quot;);</span>
+<span class="nc" id="L114">			Lettre str = new Lettre(sc.next().charAt(0));</span>
+<span class="nc" id="L115">			this.joueur.setLettre(str);</span>
+<span class="nc bnc" id="L116" title="All 2 branches missed.">				if(verifierLettre(mot)){</span>
+<span class="nc" id="L117">					System.out.println(&quot;BRAVO LE VEAU&quot;);</span>
+				}
+				else{
+<span class="nc" id="L120">					System.out.println(&quot;Dommage vous perdez une vie !&quot;);</span>
+<span class="nc" id="L121">					this.getJoueur().pointVie();</span>
+					}
+<span class="nc" id="L123">		}</span>
+<span class="nc bnc" id="L124" title="All 2 branches missed.">		if(this.joueur.getVie() == 0)</span>
+<span class="nc" id="L125">			System.out.println(&quot;Vous avez perdu !&quot;);</span>
+<span class="nc bnc" id="L126" title="All 2 branches missed.">		if(this.gagne() == true)</span>
+<span class="nc" id="L127">			System.out.println(&quot;Vous avez gagné des cookies !&quot;);</span>
+<span class="nc" id="L128">	sc.close();</span>
+<span class="nc" id="L129">	}</span>
+	
+	public boolean verifierLettre(String mot){
+<span class="nc bnc" id="L132" title="All 2 branches missed.">		if(this.joueur.getLettre().verifierLettreDansMot(mot)){</span>
+<span class="nc bnc" id="L133" title="All 2 branches missed.">			for(int i = 0; i &lt; mot.length(); i++)</span>
+			{
+<span class="nc bnc" id="L135" title="All 2 branches missed.">				if(mot.charAt(i)==this.joueur.getLettre().getLettre())</span>
+<span class="nc" id="L136">					trouve[i] = 1;</span>
+			}
+<span class="nc" id="L138">			return true;</span>
+		}
+		
+<span class="nc" id="L141">		return false;</span>
+	}
+	
+	public boolean gagne()
+	{
+<span class="nc" id="L146">		boolean ui = true;</span>
+<span class="nc bnc" id="L147" title="All 2 branches missed.">		for(int i = 0; i &lt; trouve.length;i++)</span>
+		{
+<span class="nc bnc" id="L149" title="All 2 branches missed.">			if(trouve[i] == 0)</span>
+<span class="nc" id="L150">				ui = false;</span>
+		}
+<span class="nc" id="L152">		return ui;</span>
+	}
+	
+	public String toString() {
+<span class="fc" id="L156">		return &quot;PenduConsole [joueur=&quot; + joueur + &quot;, dictionnaire=&quot;</span>
+				+ dictionnaire + &quot;, trouve=&quot; + Arrays.toString(trouve) + &quot;]&quot;;
+	}
+
+
+	public static void main(String[] args){
+<span class="nc" id="L162">		PenduConsole p=new PenduConsole();</span>
+<span class="nc" id="L163">		p.menu();</span>
+<span class="nc" id="L164">	}</span>
+	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.1.201405082137</span></div></body></html>
