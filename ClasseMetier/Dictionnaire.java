@@ -1,6 +1,5 @@
 package classeMetier;
 import java.util.*;
-import classeDialogue.*;
 
 public class Dictionnaire {
 
@@ -34,14 +33,14 @@ public class Dictionnaire {
 
     public void ajouterMot(String mot) {
     	if(verifierMotAjout(mot))
-    		this.mots.add(mot);
+    		this.mots.add(mot.toUpperCase());
     }
 
 
     public String supprimerMot(String mot) {
-    	if(verifierMotSuppr(mot)){
+    	if(verifierMotSuppr(mot.toUpperCase())){
     		String var = mot;
-    		this.mots.remove(mot);
+    		this.mots.remove(mot.toUpperCase());
     		return var;
     	}
     	else

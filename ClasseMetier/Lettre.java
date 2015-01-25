@@ -1,12 +1,11 @@
 package classeMetier;
-import classeDialogue.*;
 
 public class Lettre {
 
     private char lettre;
 
 	public Lettre(char lettre) {
-		this.lettre = lettre;
+		this.lettre = Character.toUpperCase(lettre);
 	}
 	
 	public Lettre(){
@@ -14,14 +13,15 @@ public class Lettre {
 	}
 	public Lettre(String s){
 		this.lettre= s.charAt(0);
-		
+		Character.toUpperCase(this.lettre);
 	}
+    
 	public char getLettre() {
 		return lettre;
 	}
 
 	public void setLettre(char lettre) {
-		this.lettre = lettre;
+		this.lettre =  Character.toUpperCase(lettre);
 	}
 
     @Override

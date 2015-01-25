@@ -1,5 +1,4 @@
 package classeMetier;
-import classeDialogue.*;
 
 public class Joueur {
 
